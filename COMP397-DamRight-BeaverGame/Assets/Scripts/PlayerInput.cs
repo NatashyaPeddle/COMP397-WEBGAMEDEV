@@ -1,8 +1,6 @@
 using KBCore.Refs;
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.XR;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerInput : MonoBehaviour
@@ -15,8 +13,8 @@ public class PlayerInput : MonoBehaviour
     
     [SerializeField] private float maxSpeed = 10.0f;
     [SerializeField] private float gravity = -30.0f;
-    [SerializeField] private float rotationSpeed = 4.0f;
-    [SerializeField] private float mouseSensY = 5.0f;
+    [SerializeField] private float rotationSpeed = 10.0f;
+    [SerializeField] private float mouseSensY = 8.0f;
     [SerializeField, Child] private Camera cam;
 
 
@@ -84,7 +82,7 @@ public class PlayerInput : MonoBehaviour
         ///ROTATE CAMERA
         camXRotation += mouseSensY * readLook.y * Time.deltaTime * -1;
         camXRotation = Mathf.Clamp(camXRotation, -90f, 90f);
-        cam.gameObject.transform.localRotation = Quaternion.Euler(camXRotation * readLook.y, 0, 0);
+        cam.gameObject.transform.localRotation = Quaternion.Euler(camXRotation, 0, 0);
     }
 
     ///MOUSE SENSITIVITY -----------------------------------------------------------
