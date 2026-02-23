@@ -1,24 +1,21 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class MenuInput : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
     private InputAction openMenu;
     [SerializeField] private GameObject menuPanel;
-    [SerializeField] private Slider mouseSensibilitySlider;
     [SerializeField] private bool isMenuOpen;
     void Start()
     {
         openMenu = InputSystem.actions.FindAction("UI/Menu");
         openMenu.started += ToggleMenu;
-        mouseSensibilitySlider.onValueChanged.AddListener(delegate {OnValueChangedRuntime(mouseSensibilitySlider.value);});
     }
 
     private void OnDisable()
     {
         openMenu.started -= ToggleMenu;
-        mouseSensibilitySlider.onValueChanged.RemoveListener(delegate {OnValueChangedRuntime(mouseSensibilitySlider.value);});
     }
 
     private void ToggleMenu(InputAction.CallbackContext context)
@@ -43,8 +40,8 @@ public class MenuInput : MonoBehaviour
         }
     }
 
-    private void OnValueChangedRuntime(float value)
+    public void ReturnMainMenu()
     {
-        Debug.Log($"MenuInput value changed - {value}");
+        SceneManager.LoadScene("MainMenu");
     }
 }

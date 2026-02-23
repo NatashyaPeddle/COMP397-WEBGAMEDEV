@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     {
         ///Add a Game Manager?
         ///Temporary Test menu
-        SceneManager.LoadScene("Test");
+        SceneManager.LoadScene("LevelOne");
     }
 
     ///LOAD GAME ----------------
