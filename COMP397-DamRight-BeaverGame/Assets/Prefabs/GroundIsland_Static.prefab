@@ -33,8 +33,63 @@ Transform:
   - {fileID: 5114659460585438766}
   - {fileID: 3916889062394563409}
   - {fileID: 5307871732619197867}
+  - {fileID: 2545492647639521963}
+  - {fileID: 4161608464452010488}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1473911683221887930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4161608464452010488}
+  - component: {fileID: 6790905501133739044}
+  m_Layer: 0
+  m_Name: Collider2 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4161608464452010488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473911683221887930}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.8742409, z: -0, w: 0.4854924}
+  m_LocalPosition: {x: 1.88, y: 12.8, z: 1.56}
+  m_LocalScale: {x: 1.0620112, y: 1, z: 2.2727666}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5264982959927976841}
+  m_LocalEulerAnglesHint: {x: 0, y: 121.911, z: 0}
+--- !u!65 &6790905501133739044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473911683221887930}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2942907260388617717
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,6 +249,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &8125793288018155259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2545492647639521963}
+  - component: {fileID: 4905324147852154021}
+  m_Layer: 0
+  m_Name: Collider2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2545492647639521963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8125793288018155259}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.4454734, z: -0, w: 0.89529526}
+  m_LocalPosition: {x: 1.95, y: 12.8, z: -1.41}
+  m_LocalScale: {x: 1.0620112, y: 1, z: 2.2727666}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5264982959927976841}
+  m_LocalEulerAnglesHint: {x: 0, y: 52.907, z: 0}
+--- !u!65 &4905324147852154021
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8125793288018155259}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &318916906583001087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -262,6 +370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GROUNDISLAND_STATIC
       objectReference: {fileID: 0}
+    - target: {fileID: 8657613559886351978, guid: d9935175bdfbb5f44aed372717f67501, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e3180a0685b24f4fb627951eb7b92e2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
