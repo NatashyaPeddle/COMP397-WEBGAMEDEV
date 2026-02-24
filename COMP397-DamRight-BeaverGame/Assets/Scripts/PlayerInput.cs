@@ -17,6 +17,10 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private float mouseSensY = 8.0f;
     [SerializeField, Child] private Camera cam;
 
+    //JUMP CONTROLS
+    private float jumpHeight = 1.0f;
+    private Vector3 jumping;
+    private bool isGrounded;
 
     ///CHARACTER CONTROLLER
     [SerializeField, Self] private CharacterController controller;
@@ -41,6 +45,8 @@ public class PlayerInput : MonoBehaviour
 
         ///JUMP
         jump.started += Jump;
+        jumping = new Vector3 (0.0f, 2.0f, 0.0f);
+
 
         ///CURSOR
         Cursor.lockState = CursorLockMode.Locked;
@@ -57,24 +63,34 @@ public class PlayerInput : MonoBehaviour
 
     private void Jump(InputAction.CallbackContext context)
     {
-        ///JUMP SOUND EFFECT
-        audioController.PlayJumpSFX();
+        if (controller.isGrounded)
+        {
+            audioController.PlayJumpSFX();
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
     }
 
     void Update()
     {
+        isGrounded = controller.isGrounded;
+
         Vector2 readMove = move.ReadValue<Vector2>();
         Vector2 readLook = look.ReadValue<Vector2>(); // (0.0)
 
-        ///PLAYER MOVEMENT
-        Vector3 movement = transform.right * readMove.x + transform.forward * readMove.y;
-
 
         //controller.Move(movement * maxSpeed * Time.deltaTime);
+        if (controller.isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
+
         velocity.y += gravity * Time.deltaTime;
-        movement *= maxSpeed * Time.deltaTime;
-        movement += velocity;
-        controller.Move(movement);
+
+        Vector3 horizontal = (transform.right * readMove.x + transform.forward * readMove.y) * maxSpeed;
+
+        Vector3 movement = horizontal + velocity;
+
+        controller.Move(movement * Time.deltaTime);
 
         ///PLAYER ROTATION
         transform.Rotate(Vector3.up, readLook.x * rotationSpeed * Time.deltaTime);
