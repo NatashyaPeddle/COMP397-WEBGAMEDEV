@@ -1,3 +1,5 @@
+//Natashya Peddle
+
 using UnityEngine;
 
 public class MiniMapController : MonoBehaviour

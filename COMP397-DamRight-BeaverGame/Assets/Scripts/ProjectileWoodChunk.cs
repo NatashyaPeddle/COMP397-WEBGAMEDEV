@@ -1,17 +1,21 @@
+//Natashya Peddle
+//Kristopher Prince #301462555
+
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Rendering.Universal.Internal;
 
 public class ProjectileWoodChunk : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision other)
+
+    private void OnTriggerEnter(Collider other)
     {
-
-        if (other.gameObject.CompareTag("NPC"))
+        if (other.CompareTag("NPCBody"))
         {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+            NPC npc = other.GetComponentInParent<NPC>();
+            if (npc != null)
+            {
+                npc.Damage(1);
+                Destroy(gameObject);
+            }
         }
-
     }
 }

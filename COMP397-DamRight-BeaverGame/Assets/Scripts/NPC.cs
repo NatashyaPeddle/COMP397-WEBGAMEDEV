@@ -1,3 +1,5 @@
+//Kristopher Prince #301462555
+
 using UnityEngine;
 using KBCore.Refs;
 using UnityEngine.AI;
@@ -8,9 +10,12 @@ using UnityEngine.AI;
 public class NPC : MonoBehaviour
 {
     [SerializeField, Self] private NavMeshAgent agent;
-
+    [SerializeField] private Collider bodyCollider;
+    [SerializeField] private Collider losCollider;
     private Transform player;
     private bool isChasing = false;
+
+    private int enemyHealth = 2;
 
     private void OnValidate() => this.ValidateRefs();
 
@@ -22,22 +27,25 @@ public class NPC : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    public void StartChasing(Transform playerTransform)
     {
-        if (other.CompareTag("Player"))
-        {
-            player = other.transform;
-            isChasing = true; 
-        }
+        player = playerTransform;
+        isChasing = true;
     }
-    
-    private void OnTriggerExit(Collider other)
+
+    public void StopChasing()
     {
-        if (other.CompareTag("Player"))
+        player = null;
+        isChasing = false;
+        agent.ResetPath();
+    }
+
+    public void Damage(int amount)
+    {
+        enemyHealth -= amount;
+        if (enemyHealth <= 0)
         {
-            isChasing = false;
-            player = null;
-            agent.ResetPath();
+            Destroy(gameObject);
         }
     }
 }

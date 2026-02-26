@@ -1,6 +1,8 @@
+//Natashya Peddle
+//Kristopher Prince #301462555
+
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering.Universal.Internal;
 
 public class PlayerShooter : MonoBehaviour
 {
@@ -10,10 +12,13 @@ public class PlayerShooter : MonoBehaviour
     [SerializeField] private float projectileForce = 0f;
 
     private InputAction fire;
+    public int ammo;
+    public int maxAmmo = 7;
 
     private void Awake()
     {
         fire = InputSystem.actions.FindAction("Player/Attack");
+        ammo = maxAmmo;
 
     }
 
@@ -29,9 +34,19 @@ public class PlayerShooter : MonoBehaviour
 
     private void Shoot(InputAction.CallbackContext context)
     {
-        GameObject projectile = GameObject.Instantiate(woodChunk, projectileSpawn.position, projectileSpawn.rotation);
-        projectile.GetComponent<Rigidbody>().AddForce(projectile.transform.forward * projectileForce, ForceMode.Impulse);
+        
+        if (ammo != 0)
+        {
+            GameObject projectile = GameObject.Instantiate(woodChunk, projectileSpawn.position, projectileSpawn.rotation);
+            projectile.GetComponent<Rigidbody>().AddForce(projectile.transform.forward * projectileForce, ForceMode.Impulse);
 
-        Destroy(projectile, 1.5f);
+            ammo--;
+            Destroy(projectile, 1.5f);
+        }
+    }
+
+    public void Reload()
+    {
+        ammo = maxAmmo;
     }
 }

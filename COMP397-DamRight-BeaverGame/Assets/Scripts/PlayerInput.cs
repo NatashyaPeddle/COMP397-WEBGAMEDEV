@@ -1,3 +1,6 @@
+//Kristopher Prince #301462555
+//Natashya Peddle
+
 using KBCore.Refs;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -109,6 +112,4 @@ public class PlayerInput : MonoBehaviour
         mouseSensY = value;
         rotationSpeed = value;
     }
-
-
 }
