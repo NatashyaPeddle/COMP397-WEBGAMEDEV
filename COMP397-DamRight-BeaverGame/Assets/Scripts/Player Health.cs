@@ -1,4 +1,5 @@
-//Kristopher Prince #301462555
+//Kristopher Prince #30146255
+//Natashya Peddle
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,6 +18,22 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= amount;
         if (health <= 0)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            SceneManager.LoadScene("GameOverScreen");
+        }
+    }
+
+    public void GetHurt (int amount)
+    {
+
+        if (health != null)
+        {
+            health -= amount;
+        }
+
+        if(health <= 0)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
