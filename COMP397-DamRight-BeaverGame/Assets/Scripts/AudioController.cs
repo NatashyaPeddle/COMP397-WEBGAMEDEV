@@ -1,7 +1,9 @@
-//Natashya Peddle
+//Natashya Peddle  301487275
 
 using System.Collections;
 using UnityEngine;
+
+using UnityEngine.UI;
 
 public class AudioController : MonoBehaviour
 {
@@ -11,11 +13,34 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
 
-   
+    public Slider MusicSlider;
+    public Slider SFXSlider;
+
+ 
+
     private IEnumerator Start()
     {
         yield return new WaitForSeconds(2f);
         PlayBGMusic();
+
+
+        MusicSlider.value = musicSource.volume;
+        SFXSlider.value = sfxSource.volume;
+
+
+        MusicSlider.onValueChanged.AddListener(OnMusicVolumeChanged);
+        MusicSlider.onValueChanged.AddListener(OnSFXVolumeChanged);
+
+    }
+
+    private void OnMusicVolumeChanged(float value)
+    {
+        musicSource.volume = value;
+    }
+
+    private void OnSFXVolumeChanged(float value)
+    {
+        sfxSource.volume = value;
     }
 
     public void PlayJumpSFX()
