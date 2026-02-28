@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 6288830402135122909}
   - component: {fileID: 3769320292991809549}
   - component: {fileID: 7321533077331890673}
+  - component: {fileID: 923618947845634566}
   m_Layer: 7
   m_Name: BeaverPlayer
   m_TagString: Player
@@ -413,6 +414,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuPanel: {fileID: 0}
+  isMenuOpen: 0
+--- !u!114 &923618947845634566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935755080516234888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e74a37c6424564eb9aca912349d5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryPanel: {fileID: 0}
   isMenuOpen: 0
 --- !u!1 &6197198308439491867
 GameObject:
