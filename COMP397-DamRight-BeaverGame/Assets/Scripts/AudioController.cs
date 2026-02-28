@@ -2,7 +2,7 @@
 
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AudioController : MonoBehaviour
@@ -16,10 +16,15 @@ public class AudioController : MonoBehaviour
     public Slider MusicSlider;
     public Slider SFXSlider;
 
- 
+    private const string MUSICVOLUME = "MusicVolume";
+    private const string SFXVOLUME = "SFXVolume";
+
+
 
     private IEnumerator Start()
     {
+        LoadVolumeSettings();
+
         yield return new WaitForSeconds(2f);
         PlayBGMusic();
 
@@ -29,18 +34,56 @@ public class AudioController : MonoBehaviour
 
 
         MusicSlider.onValueChanged.AddListener(OnMusicVolumeChanged);
-        MusicSlider.onValueChanged.AddListener(OnSFXVolumeChanged);
+        SFXSlider.onValueChanged.AddListener(OnSFXVolumeChanged);
 
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
+    }
+    private void LoadVolumeSettings()
+    {
+        
+        if (PlayerPrefs.HasKey(MUSICVOLUME))
+        {
+            musicSource.volume = PlayerPrefs.GetFloat(MUSICVOLUME, 1f);
+        }
+        else
+        {
+            musicSource.volume = 1f;
+        }
+
+        if (PlayerPrefs.HasKey(SFXVOLUME))
+        {
+            sfxSource.volume = PlayerPrefs.GetFloat(SFXVOLUME, 1f);
+        }
+        else
+        {
+            sfxSource.volume = 1f;
+        }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        LoadVolumeSettings();
     }
 
     private void OnMusicVolumeChanged(float value)
     {
+        
         musicSource.volume = value;
+        Debug.Log("Value changed to:" + value);
+
+        MusicSlider.value = musicSource.volume;
+
+
+        PlayerPrefs.SetFloat(MUSICVOLUME, value);
     }
 
     private void OnSFXVolumeChanged(float value)
     {
         sfxSource.volume = value;
+
+        SFXSlider.value = sfxSource.volume;
+        PlayerPrefs.SetFloat(SFXVOLUME, value);
     }
 
     public void PlayJumpSFX()
@@ -66,4 +109,11 @@ public class AudioController : MonoBehaviour
         musicSource.Play();
 
     }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+
 }
