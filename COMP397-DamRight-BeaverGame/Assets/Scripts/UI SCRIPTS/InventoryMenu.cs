@@ -6,6 +6,8 @@ public class InventoryMenu : MonoBehaviour
 {
     [SerializeField] private GameObject InventoryPanel;
     [SerializeField] private bool isMenuOpen;
+
+    private GameObject[] inGameUI;
     
     private InputAction openMenu;
 
@@ -13,6 +15,7 @@ public class InventoryMenu : MonoBehaviour
     {
         openMenu = InputSystem.actions.FindAction("UI/Inventory");
         openMenu.started += ToggleMenu;
+        inGameUI = GameObject.FindGameObjectsWithTag("InGameUI");
 
         
     }
@@ -21,34 +24,30 @@ public class InventoryMenu : MonoBehaviour
     {
         openMenu.started -= ToggleMenu;
 
-        
     }
 
     private void ToggleMenu(InputAction.CallbackContext context)
     {
-        Debug.Log("open menu called pressing p");
 
         isMenuOpen = !isMenuOpen;
 
 
         InventoryPanel.SetActive(isMenuOpen);
 
-        GameObject[] InGameUI = GameObject.FindGameObjectsWithTag("InGameUI");
 
         
 
         if (isMenuOpen)
         {
 
-            foreach (GameObject UIOnScreen in InGameUI)
+            foreach (GameObject UIOnScreen in inGameUI)
             {
                 if (UIOnScreen != null && UIOnScreen != InventoryPanel)
                 {
-                    UIOnScreen.SetActive(false);
+                    UIOnScreen.SetActive(!isMenuOpen);
                 }
             }
-
-            GetComponent<PlayerInput>().enabled = false; ///disable the component
+            GetComponent<PlayerInput>().enabled = false;
 
             InputSystem.actions.FindActionMap("Player").Disable(); //disable the action map for player
 
@@ -57,13 +56,20 @@ public class InventoryMenu : MonoBehaviour
         }
         else
         {
-
             GetComponent<PlayerInput>().enabled = true;
 
             InputSystem.actions.FindActionMap("Player").Enable();
 
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+
+            foreach (GameObject UIOnScreen in inGameUI)
+            {
+                if (UIOnScreen != null && UIOnScreen != InventoryPanel)
+                {
+                    UIOnScreen.SetActive(!isMenuOpen);
+                }
+            }
         }
 
 
