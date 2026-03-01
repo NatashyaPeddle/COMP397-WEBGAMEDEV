@@ -415,6 +415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPanel: {fileID: 0}
   isMenuOpen: 0
+  InventoryPanel: {fileID: 0}
 --- !u!114 &923618947845634566
 MonoBehaviour:
   m_ObjectHideFlags: 0
