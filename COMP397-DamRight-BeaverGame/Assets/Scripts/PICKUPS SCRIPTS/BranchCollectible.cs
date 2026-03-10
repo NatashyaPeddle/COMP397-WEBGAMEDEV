@@ -14,7 +14,7 @@ public class BranchCollectible : MonoBehaviour
 
     private void Start()
     {
-        bonusScore = FindObjectOfType<BonusScore>();
+        bonusScore = FindFirstObjectByType<BonusScore>();
         if (bonusScore == null)
         {
             Debug.LogWarning("Cant find bonus score");
@@ -29,9 +29,9 @@ public class BranchCollectible : MonoBehaviour
         {
             Debug.Log("Branch Picked up");
 
-            if(bonusScore != null)
+            if(BonusScore.Instance != null)
             {
-                bonusScore.branchCollect(branchNum);
+                BonusScore.Instance.branchCollect(branchNum);
             }
             else
             {

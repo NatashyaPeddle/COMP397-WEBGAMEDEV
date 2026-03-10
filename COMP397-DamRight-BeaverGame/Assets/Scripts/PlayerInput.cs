@@ -4,6 +4,7 @@
 using KBCore.Refs;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerInput : MonoBehaviour
@@ -29,7 +30,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField, Self] private CharacterController controller;
 
     ///AUDIO CONTROLLER
-    [SerializeField, Scene] private AudioController audioController;
+    [SerializeField] private AudioController audioController;
 
     private float camXRotation;
     private Vector3 velocity;
@@ -37,6 +38,14 @@ public class PlayerInput : MonoBehaviour
     private void OnValidate()
     {
         this.ValidateRefs();
+    }
+
+    private void Awake()
+    {
+        if (audioController == null)
+        {
+            audioController = FindFirstObjectByType<AudioController>();
+        }
     }
 
     private void Start()

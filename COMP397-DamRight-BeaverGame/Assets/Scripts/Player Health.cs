@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
     public void GetHurt (int amount)
     {
 
-        if (health != null)
+        if (health != 0)
         {
             health -= amount;
         }

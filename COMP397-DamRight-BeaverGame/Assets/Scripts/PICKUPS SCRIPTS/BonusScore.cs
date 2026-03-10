@@ -6,20 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class BonusScore : MonoBehaviour
 {
-    [SerializeField] private GameObject branch;
-    [SerializeField] private TextMeshProUGUI scoreText;
+    private TextMeshProUGUI scoreText;
 
     public static BonusScore Instance;
 
     public int score;
     public int maxScore = 11;
-
-    private void Start()
-    {
-        score = 0;
-
-        updateScoreUI();
-    }
 
     private void Awake()
     {
@@ -35,9 +27,15 @@ public class BonusScore : MonoBehaviour
         }
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
 
+        if (scene.name == "LevelOne")
+        {
+            score = 0;
+        }
+        
+        scoreText = null;
         GameObject scoreObject = GameObject.Find("ScoreText");
         //GameObject scoreObjectTagged = GameObject.FindGameObjectWithTag("ScoreUI");
 
@@ -48,12 +46,12 @@ public class BonusScore : MonoBehaviour
         }
         else
         {
-            scoreText = GameObject.FindFirstObjectByType<TextMeshProUGUI>();
+            scoreText = null;
         }
 
 
 
-            updateScoreUI();
+        updateScoreUI();
     }
 
 
@@ -71,12 +69,7 @@ public class BonusScore : MonoBehaviour
     {
         if (scoreText != null)
         {
-            Debug.Log(score);
             scoreText.text = " " + score;
-        }
-        else
-        {
-            Debug.LogWarning("ScoreText reference is not assigned");
         }
     }
 

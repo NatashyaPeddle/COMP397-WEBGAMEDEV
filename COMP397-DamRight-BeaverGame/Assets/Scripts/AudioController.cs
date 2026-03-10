@@ -28,13 +28,17 @@ public class AudioController : MonoBehaviour
         yield return new WaitForSeconds(2f);
         PlayBGMusic();
 
+        if (MusicSlider != null)
+        {
+           MusicSlider.value = musicSource.volume; 
+           MusicSlider.onValueChanged.AddListener(OnMusicVolumeChanged);
+        }
 
-        MusicSlider.value = musicSource.volume;
-        SFXSlider.value = sfxSource.volume;
-
-
-        MusicSlider.onValueChanged.AddListener(OnMusicVolumeChanged);
-        SFXSlider.onValueChanged.AddListener(OnSFXVolumeChanged);
+        if (SFXSlider != null)
+        {
+           SFXSlider.value = sfxSource.volume;
+           SFXSlider.onValueChanged.AddListener(OnSFXVolumeChanged); 
+        }
 
         SceneManager.sceneLoaded += OnSceneLoaded;
 
@@ -48,7 +52,7 @@ public class AudioController : MonoBehaviour
         }
         else
         {
-            musicSource.volume = 1f;
+            musicSource.volume = 0.08f;
         }
 
         if (PlayerPrefs.HasKey(SFXVOLUME))
@@ -57,7 +61,7 @@ public class AudioController : MonoBehaviour
         }
         else
         {
-            sfxSource.volume = 1f;
+            sfxSource.volume = 1.5f;
         }
     }
 
@@ -72,9 +76,6 @@ public class AudioController : MonoBehaviour
         musicSource.volume = value;
         Debug.Log("Value changed to:" + value);
 
-        MusicSlider.value = musicSource.volume;
-
-
         PlayerPrefs.SetFloat(MUSICVOLUME, value);
     }
 
@@ -82,7 +83,6 @@ public class AudioController : MonoBehaviour
     {
         sfxSource.volume = value;
 
-        SFXSlider.value = sfxSource.volume;
         PlayerPrefs.SetFloat(SFXVOLUME, value);
     }
 
