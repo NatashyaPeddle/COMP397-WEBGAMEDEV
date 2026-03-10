@@ -8,6 +8,7 @@ TagManager:
   - NPCBody
   - DeathPlane
   - InGameUI
+  - ScoreUI
   layers:
   - Default
   - TransparentFX

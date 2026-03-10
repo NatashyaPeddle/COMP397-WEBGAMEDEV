@@ -2,11 +2,14 @@
 
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BonusScore : MonoBehaviour
 {
     [SerializeField] private GameObject branch;
     [SerializeField] private TextMeshProUGUI scoreText;
+
+    public static BonusScore Instance;
 
     public int score;
     public int maxScore = 11;
@@ -17,6 +20,42 @@ public class BonusScore : MonoBehaviour
 
         updateScoreUI();
     }
+
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+
+        GameObject scoreObject = GameObject.Find("ScoreText");
+        //GameObject scoreObjectTagged = GameObject.FindGameObjectWithTag("ScoreUI");
+
+        if (scoreObject != null)
+        {
+            scoreText = scoreObject.GetComponent<TextMeshProUGUI>();
+            //scoreText = FindObjectOfType<TextMeshProUGUI>();
+        }
+        else
+        {
+            scoreText = GameObject.FindFirstObjectByType<TextMeshProUGUI>();
+        }
+
+
+
+            updateScoreUI();
+    }
+
 
     public void branchCollect(int amount)
     {
@@ -32,6 +71,7 @@ public class BonusScore : MonoBehaviour
     {
         if (scoreText != null)
         {
+            Debug.Log(score);
             scoreText.text = " " + score;
         }
         else

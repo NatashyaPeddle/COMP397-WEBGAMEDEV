@@ -8,6 +8,8 @@ public class BranchCollectible : MonoBehaviour
     [SerializeField] private GameObject branch;
     [SerializeField] private BonusScore bonusScore;
 
+    
+
     public int branchNum = 1;
 
     private void Start()
@@ -18,6 +20,8 @@ public class BranchCollectible : MonoBehaviour
             Debug.LogWarning("Cant find bonus score");
         }
     }
+
+    
 
     private void OnTriggerEnter(Collider other)
     {

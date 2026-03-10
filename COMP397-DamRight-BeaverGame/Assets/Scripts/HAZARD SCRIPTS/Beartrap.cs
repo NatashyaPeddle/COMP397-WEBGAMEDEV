@@ -1,5 +1,6 @@
 //Natashya Peddle  301487275
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Beartrap : MonoBehaviour
 {
@@ -14,4 +15,6 @@ public class Beartrap : MonoBehaviour
         health.GetHurt(damageAmount);
         Destroy(gameObject);
     }
+
+    
 }
