@@ -32,9 +32,11 @@ public class PlayerShooter : MonoBehaviour
         fire.started -= Shoot;
     }
 
+
+
     private void Shoot(InputAction.CallbackContext context)
     {
-        
+
         if (ammo != 0)
         {
             GameObject projectile = GameObject.Instantiate(woodChunk, projectileSpawn.position, projectileSpawn.rotation);
@@ -45,8 +47,18 @@ public class PlayerShooter : MonoBehaviour
         }
     }
 
-    public void Reload()
+    //public void Reload()
+    //{
+    //    ammo = maxAmmo;
+    //}
+
+    public void Reload(int amount)
     {
-        ammo = maxAmmo;
+        ammo += amount;
+
+        if (ammo >= maxAmmo)
+        {
+            ammo = maxAmmo;
+        }
     }
 }
