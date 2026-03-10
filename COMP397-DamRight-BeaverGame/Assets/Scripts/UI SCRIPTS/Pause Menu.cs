@@ -39,8 +39,8 @@ public class PauseMenu : MonoBehaviour
                 }
             }
 
-            GetComponent<PlayerInput>().enabled = false;
             InputSystem.actions.FindActionMap("Player").Disable();
+            Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
@@ -55,8 +55,8 @@ public class PauseMenu : MonoBehaviour
                 }
             }
 
-            GetComponent<PlayerInput>().enabled = true;
             InputSystem.actions.FindActionMap("Player").Enable();
+            Time.timeScale = 1f;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }

@@ -47,19 +47,16 @@ public class InventoryMenu : MonoBehaviour
                     UIOnScreen.SetActive(!isMenuOpen);
                 }
             }
-            GetComponent<PlayerInput>().enabled = false;
 
             InputSystem.actions.FindActionMap("Player").Disable(); //disable the action map for player
-
+            Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
         else
         {
-            GetComponent<PlayerInput>().enabled = true;
-
             InputSystem.actions.FindActionMap("Player").Enable();
-
+            Time.timeScale = 1f;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
