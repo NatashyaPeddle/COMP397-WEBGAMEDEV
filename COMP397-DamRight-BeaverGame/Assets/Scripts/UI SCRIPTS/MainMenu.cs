@@ -1,4 +1,5 @@
-//Natashya Peddle  301487275
+//Natashya Peddle  301487275a
+
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -30,7 +31,11 @@ public class MainMenu : MonoBehaviour
     ///EXIT ----------------
     public void QuitGame()
     {
+        #if !UNITY_EDITOR
         Application.Quit();
+        #elif UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #   endif
     }
 
     ///BACK TO MAIN MENU -----------
