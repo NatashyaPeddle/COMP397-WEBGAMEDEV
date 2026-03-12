@@ -318,8 +318,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 8856903344757986969}
-  bodyCollider: {fileID: 0}
-  losCollider: {fileID: 0}
+  bodyCollider: {fileID: 10415752350620777}
+  losCollider: {fileID: 4685885965818977576}
+  waypoints: []
 --- !u!54 &-512917630042972505
 Rigidbody:
   m_ObjectHideFlags: 0

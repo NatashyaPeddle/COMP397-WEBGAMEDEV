@@ -11,7 +11,6 @@ public class BonusScore : MonoBehaviour
     public static BonusScore Instance;
 
     public int score;
-    public int maxScore = 11;
 
     private void Awake()
     {
@@ -57,10 +56,7 @@ public class BonusScore : MonoBehaviour
 
     public void branchCollect(int amount)
     {
-        if (score < maxScore)
-        {
-            score += amount;
-        }
+        score += amount;
 
         updateScoreUI();
     }
