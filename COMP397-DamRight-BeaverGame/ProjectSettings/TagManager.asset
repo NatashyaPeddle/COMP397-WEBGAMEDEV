@@ -9,6 +9,7 @@ TagManager:
   - DeathPlane
   - InGameUI
   - ScoreUI
+  - waypoint
   layers:
   - Default
   - TransparentFX

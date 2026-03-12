@@ -22,20 +22,25 @@ public class NPC : MonoBehaviour
 
     private int enemyHealth = 2;
 
+    [SerializeField] private float normalSpeed = 7;
+    [SerializeField] private float chaseSpeed = 10;
+
     private void OnValidate() => this.ValidateRefs();
 
     void Start()
     {
+        agent.speed = normalSpeed;
+        
         waypoints = GameObject.FindGameObjectsWithTag("waypoint").ToList();
 
-        if (waypoints.Count < 0) return;
+        if (waypoints.Count == 0) return;
 
         agent.destination = destination = waypoints[index].transform.position;
     }
 
     void Update()
     {
-        if (waypoints.Count < 0) return;
+        if (waypoints.Count == 0) return;
 
         if (!isChasing && Vector3.Distance(transform.position, destination) < 5f)
         {
@@ -46,6 +51,7 @@ public class NPC : MonoBehaviour
 
         if (isChasing && player != null)
         {
+            agent.speed = chaseSpeed;
             agent.destination = player.position;
         }
     }
