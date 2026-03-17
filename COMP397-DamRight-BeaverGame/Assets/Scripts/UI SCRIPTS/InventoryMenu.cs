@@ -39,6 +39,9 @@ public class InventoryMenu : MonoBehaviour
 
         if (isMenuOpen)
         {
+            InventoryPanel.SetActive(true);
+
+            BonusScore.Instance.updateScoreUI();
 
             foreach (GameObject UIOnScreen in inGameUI)
             {

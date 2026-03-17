@@ -35,7 +35,7 @@ public class BonusScore : MonoBehaviour
         }
         
         scoreText = null;
-        GameObject scoreObject = GameObject.Find("ScoreText");
+        GameObject scoreObject = GameObject.FindWithTag("ScoreUI");
         //GameObject scoreObjectTagged = GameObject.FindGameObjectWithTag("ScoreUI");
 
         if (scoreObject != null)
@@ -61,8 +61,18 @@ public class BonusScore : MonoBehaviour
         updateScoreUI();
     }
 
-    private void updateScoreUI()
+    public void updateScoreUI()
     {
+        if (scoreText == null)
+        {
+            GameObject scoreObject = GameObject.FindWithTag("ScoreUI");
+
+            if (scoreObject != null)
+            {
+                scoreText = scoreObject.GetComponent<TextMeshProUGUI>();
+            }
+        }
+
         if (scoreText != null)
         {
             scoreText.text = " " + score;

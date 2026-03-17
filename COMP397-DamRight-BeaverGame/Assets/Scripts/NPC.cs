@@ -30,8 +30,6 @@ public class NPC : MonoBehaviour
     void Start()
     {
         agent.speed = normalSpeed;
-        
-        waypoints = GameObject.FindGameObjectsWithTag("waypoint").ToList();
 
         if (waypoints.Count == 0) return;
 
