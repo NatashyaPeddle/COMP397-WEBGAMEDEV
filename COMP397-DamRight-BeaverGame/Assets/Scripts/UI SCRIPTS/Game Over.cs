@@ -1,5 +1,5 @@
 ///Code / Internal Documentation - File Name: Game Over
-///Author's Name (s) & Student#: Unknown
+///Author's Name (s) & Student#: Kristopher Prince #301462555
 ///Program Description / Purpose: Creates the gameover screen which appears upon player death. The buttons are functional. 
 
 using UnityEngine;

@@ -14,6 +14,11 @@ public class SaveLoadSystem : PersistentSingleton<SaveLoadSystem>
     {
         base.Awake();
         dataService = new FileDataService(new JsonSerializer());
+
+        if (gameData == null)
+        {
+            gameData = new GameData();
+        }
     }
 
     public void SaveGame()
