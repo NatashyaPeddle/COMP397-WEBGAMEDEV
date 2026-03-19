@@ -3,9 +3,33 @@
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+
+    [SerializeField] private Button saveBtn;
+    [SerializeField] private Button loadBtn;
+
+    private void Start()
+    {
+        saveBtn.onClick.AddListener(() =>
+        {
+            SaveLoadSystem.Instance.gameData.fileName = "Save1";
+            SaveLoadSystem.Instance.gameData.sceneName = "LevelOne";
+            SaveLoadSystem.Instance.SaveGame();
+        });
+
+        loadBtn.onClick.AddListener(() =>
+        {
+            SaveLoadSystem.Instance.LoadGame("Save1");
+
+        });
+
+
+    }
+
+
 
     ///NEW GAME ----------------
     public void StartNewGame()
