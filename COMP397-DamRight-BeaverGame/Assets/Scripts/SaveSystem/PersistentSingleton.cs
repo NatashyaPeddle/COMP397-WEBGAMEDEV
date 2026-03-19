@@ -12,7 +12,7 @@ public class PersistentSingleton<T> : MonoBehaviour where T : MonoBehaviour
             // If the instance is null, look for it
             if (_instance == null)
             {
-                _instance = FindObjectOfType<T>();
+                _instance = FindFirstObjectByType<T>();
 
                 // If no instance is found, create a new one
                 if (_instance == null)
