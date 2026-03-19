@@ -15,6 +15,8 @@ public class NPC : MonoBehaviour
     [SerializeField] private Collider bodyCollider;
     [SerializeField] private Collider losCollider;
     [SerializeField] private List<GameObject> waypoints = new List<GameObject>();
+
+    [SerializeField] private AudioController audioController;
     private Vector3 destination;
     private Transform player;
     private int index;
@@ -26,6 +28,14 @@ public class NPC : MonoBehaviour
     [SerializeField] private float chaseSpeed = 10;
 
     private void OnValidate() => this.ValidateRefs();
+
+     private void Awake()
+    {
+        if (audioController == null)
+        {
+            audioController = FindFirstObjectByType<AudioController>();
+        }
+    }
 
     void Start()
     {
@@ -72,7 +82,13 @@ public class NPC : MonoBehaviour
         enemyHealth -= amount;
         if (enemyHealth <= 0)
         {
+            audioController.PlayEnemyDefeatedSFX();
             Destroy(gameObject);
+        }
+
+        else
+        {
+            audioController.PlayEnemyHurtSFX();
         }
     }
 }

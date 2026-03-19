@@ -4,7 +4,6 @@
 using KBCore.Refs;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerInput : MonoBehaviour

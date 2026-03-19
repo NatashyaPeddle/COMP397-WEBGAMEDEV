@@ -10,6 +10,7 @@ public class PlayerShooter : MonoBehaviour
     [SerializeField] private GameObject woodChunk;
     [SerializeField] private Transform projectileSpawn;
     [SerializeField] private float projectileForce = 0f;
+    [SerializeField] private AudioController audioController;
 
     private InputAction fire;
     public int ammo;
@@ -20,6 +21,10 @@ public class PlayerShooter : MonoBehaviour
         fire = InputSystem.actions.FindAction("Player/Attack");
         ammo = maxAmmo;
 
+        if (audioController == null)
+        {
+            audioController = FindFirstObjectByType<AudioController>();
+        }
     }
 
     private void OnEnable()
@@ -39,6 +44,8 @@ public class PlayerShooter : MonoBehaviour
 
         if (ammo != 0)
         {
+            audioController.PlayShootSFX();
+            
             GameObject projectile = GameObject.Instantiate(woodChunk, projectileSpawn.position, projectileSpawn.rotation);
             projectile.GetComponent<Rigidbody>().AddForce(projectile.transform.forward * projectileForce, ForceMode.Impulse);
 

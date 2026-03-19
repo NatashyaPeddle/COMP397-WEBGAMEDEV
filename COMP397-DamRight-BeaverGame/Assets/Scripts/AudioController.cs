@@ -10,6 +10,13 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioClip backgroundMusic;
     [SerializeField] private AudioClip jumpSFX;
     [SerializeField] private AudioClip deathSFX;
+    [SerializeField] private AudioClip crunchSFX;
+    [SerializeField] private AudioClip shootSFX;
+    [SerializeField] private AudioClip playerHealSFX;
+    [SerializeField] private AudioClip playerHurtSFX;
+    [SerializeField] private AudioClip enemyHurtSFX;
+    [SerializeField] private AudioClip enemyDefeatedSFX;
+    
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
 
@@ -25,7 +32,7 @@ public class AudioController : MonoBehaviour
     {
         LoadVolumeSettings();
 
-        yield return new WaitForSeconds(2f);
+        yield return null;
         PlayBGMusic();
 
         if (MusicSlider != null)
@@ -61,7 +68,7 @@ public class AudioController : MonoBehaviour
         }
         else
         {
-            sfxSource.volume = 1.5f;
+            sfxSource.volume = 1f;
         }
     }
 
@@ -74,7 +81,6 @@ public class AudioController : MonoBehaviour
     {
         
         musicSource.volume = value;
-        Debug.Log("Value changed to:" + value);
 
         PlayerPrefs.SetFloat(MUSICVOLUME, value);
     }
@@ -88,18 +94,47 @@ public class AudioController : MonoBehaviour
 
     public void PlayJumpSFX()
     {
-        sfxSource.clip = jumpSFX;
-        sfxSource.Play();
-
-
+        PlaySFX(jumpSFX);
     }
 
     public void PlayDeathSFX()
     {
-        sfxSource.clip = deathSFX;
-        sfxSource.Play();
+       PlaySFX(deathSFX);
+    }
 
+    public void PlayCrunchSFX()
+    {
+        PlaySFX(crunchSFX);
+    }
 
+    public void PlayShootSFX()
+    {
+        PlaySFX(shootSFX);
+    }
+
+    public void PlayPlayerHealSFX()
+    {
+        PlaySFX(playerHealSFX);
+    }
+
+    public void PlayPlayerHurtSFX()
+    {
+        PlaySFX(playerHurtSFX);
+    }
+
+    public void PlayEnemyHurtSFX()
+    {
+        PlaySFX(enemyHurtSFX);
+    }
+    public void PlayEnemyDefeatedSFX()
+    {
+        PlaySFX(enemyDefeatedSFX);
+    }
+
+    public void PlaySFX(AudioClip clip)
+    {
+        if (clip == null) return;
+        sfxSource.PlayOneShot(clip);
     }
 
     public void PlayBGMusic()

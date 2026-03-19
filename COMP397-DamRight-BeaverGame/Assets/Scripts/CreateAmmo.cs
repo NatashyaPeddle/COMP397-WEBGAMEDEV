@@ -7,6 +7,16 @@ public class CreateAmmo : MonoBehaviour
     private bool InRange = false;
     private InputAction interact;
 
+    [SerializeField] private AudioController audioController;
+
+    private void Awake()
+    {
+        if (audioController == null)
+        {
+            audioController = FindFirstObjectByType<AudioController>();
+        }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,8 +34,6 @@ public class CreateAmmo : MonoBehaviour
         
     }
 
-
-
     private void createAmmo()
     {
         Debug.Log("Creating Ammo");
@@ -33,6 +41,7 @@ public class CreateAmmo : MonoBehaviour
         PlayerShooter shooter = GameObject.FindWithTag("Player").GetComponent<PlayerShooter>();
         if (shooter != null)
         {
+            audioController.PlayCrunchSFX();
             shooter.Reload(1);
         }
 

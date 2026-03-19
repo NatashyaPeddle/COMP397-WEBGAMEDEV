@@ -1881,6 +1881,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3881993989926523802, guid: 4544e428d3de83745add0bc524d098c0, type: 3}
+      propertyPath: shootSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f7a3856863ebd441b16eb5feb06322d, type: 3}
+    - target: {fileID: 3881993989926523802, guid: 4544e428d3de83745add0bc524d098c0, type: 3}
+      propertyPath: crunchSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 449907f1e1bfb0e409e8bc6469cf46a2, type: 3}
+    - target: {fileID: 3881993989926523802, guid: 4544e428d3de83745add0bc524d098c0, type: 3}
+      propertyPath: enemyHurtSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: e02d647088c7ca64ca9332f09dfa914c, type: 3}
+    - target: {fileID: 3881993989926523802, guid: 4544e428d3de83745add0bc524d098c0, type: 3}
+      propertyPath: playerHealSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: cc1f90033de0bdd45b724e942b495ef1, type: 3}
+    - target: {fileID: 3881993989926523802, guid: 4544e428d3de83745add0bc524d098c0, type: 3}
+      propertyPath: playerHurtSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 81b48ee82276f134cbd5fff8d1ea036a, type: 3}
+    - target: {fileID: 3881993989926523802, guid: 4544e428d3de83745add0bc524d098c0, type: 3}
+      propertyPath: enemyDefeatedSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f8d92309f40ecc4d9fceb03e7e3dfb4, type: 3}
     - target: {fileID: 7700367309229214517, guid: 4544e428d3de83745add0bc524d098c0, type: 3}
       propertyPath: m_Name
       value: AudioController

@@ -9,6 +9,16 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     public int maxHealth = 3;
 
+    [SerializeField] private AudioController audioController;
+
+    private void Awake()
+    {
+        if (audioController == null)
+        {
+            audioController = FindFirstObjectByType<AudioController>();
+        }
+    }
+
     void Start()
     {
         health = maxHealth;
@@ -16,9 +26,11 @@ public class PlayerHealth : MonoBehaviour
 
     public void Damage(int amount)
     {
+        audioController.PlayPlayerHurtSFX();
         health -= amount;
         if (health <= 0)
         {
+            audioController.PlayDeathSFX();
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             SceneManager.LoadScene("GameOverScreen");
@@ -30,11 +42,13 @@ public class PlayerHealth : MonoBehaviour
 
         if (health != 0)
         {
+            audioController.PlayPlayerHurtSFX();
             health -= amount;
         }
 
         if(health <= 0)
         {
+            audioController.PlayDeathSFX();
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             SceneManager.LoadScene("GameOverScreen");
@@ -45,6 +59,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (health != maxHealth)
         {
+            audioController.PlayPlayerHealSFX();
             health += amount;
         }
     }
