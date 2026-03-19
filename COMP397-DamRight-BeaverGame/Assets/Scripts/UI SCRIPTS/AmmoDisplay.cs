@@ -1,5 +1,7 @@
-//Kristopher Prince #301462555
-//Natashya Peddle  301487275
+
+///Code / Internal Documentation - File Name: AmmoDisplay
+///Author's Name (s) & Student#: Kristopher Prince #301462555 / Natashya Peddle #301487275
+///Program Description / Purpose: Creates the ammo UI text. 
 
 using TMPro;
 using UnityEngine;

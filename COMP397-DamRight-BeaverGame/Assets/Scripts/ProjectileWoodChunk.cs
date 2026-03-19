@@ -1,5 +1,8 @@
-//Natashya Peddle  301487275
-//Kristopher Prince #301462555
+
+///Code / Internal Documentation - File Name: ProjectileWoodChunk
+///Author's Name (s) & Student#: Natashya Peddle #301487275 / Kristopher Prince #301462555
+///Program Description / Purpose: Kills the enemy when the projectile hits them. 
+
 
 using UnityEngine;
 

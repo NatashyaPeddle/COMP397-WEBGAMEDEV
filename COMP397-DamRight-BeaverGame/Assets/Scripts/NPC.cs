@@ -1,4 +1,6 @@
-//Kristopher Prince #301462555
+///Code / Internal Documentation - File Name: NPC
+///Author's Name (s) & Student#: Kristopher Prince #301462555
+///Program Description / Purpose: Manages the NPC entity, including waypoints, collisions, damage, chasing, speed etc. 
 
 using UnityEngine;
 using KBCore.Refs;

@@ -1,4 +1,8 @@
-//Natashya Peddle  301487275
+///Code / Internal Documentation - File Name: LevelComplete
+///Author's Name (s) & Student#: Natashya Peddle #301487275
+///Program Description / Purpose: Creates level complete screen with functioning buttons and a branch score. Stops the player from moving / game from playing. 
+
+
 
 using UnityEngine;
 using UnityEngine.InputSystem;

@@ -1,4 +1,7 @@
-//Kristopher Prince #301462555
+
+///Code / Internal Documentation - File Name: Pause Menu
+///Author's Name (s) & Student#: Kristopher Prince #301462555
+///Program Description / Purpose: Creates the pause menu and allows the player to open and close it. All buttons are functional. 
 
 using UnityEngine;
 using UnityEngine.InputSystem;

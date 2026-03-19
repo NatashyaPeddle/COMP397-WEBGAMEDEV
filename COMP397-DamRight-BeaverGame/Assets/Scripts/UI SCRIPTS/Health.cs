@@ -1,4 +1,6 @@
-//Kristopher Prince #301462555
+///Code / Internal Documentation - File Name: Health
+///Author's Name (s) & Student#: Kristopher Prince #301462555
+///Program Description / Purpose: Creates / manages player health and UI: increasing and decreasing. 
 
 using UnityEngine;
 using UnityEngine.UI;

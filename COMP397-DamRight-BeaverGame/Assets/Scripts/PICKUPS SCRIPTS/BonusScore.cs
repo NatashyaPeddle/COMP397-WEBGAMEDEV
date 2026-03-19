@@ -1,4 +1,7 @@
-//Natashya Peddle  301487275
+
+///Code / Internal Documentation - File Name: BonusScore
+///Author's Name (s) & Student#: Natashya Peddle #301487275
+///Program Description / Purpose: Collects the branch score into a number. Turns the branchscore into text.
 
 using UnityEngine;
 using TMPro;

@@ -1,4 +1,8 @@
-//Natashya Peddle  301487275
+
+///Code / Internal Documentation - File Name: CreateAmmo
+///Author's Name (s) & Student#: Natashya Peddle #301487275
+///Program Description / Purpose: Allows the player to go to a tree asset, press a key and reload their ammo by chewing a tree. Reloads only by 1.
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 

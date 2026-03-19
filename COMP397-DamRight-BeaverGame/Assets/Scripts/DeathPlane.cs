@@ -1,3 +1,6 @@
+///Code / Internal Documentation - File Name: DeathPlane
+///Author's Name (s) & Student#: Kristopher Prince #301462555
+///Program Description / Purpose: Kills the player when touched. Acts as the ground barrier to trigger death when the player falls. 
 using UnityEngine;
 
 public class DeathPlane : MonoBehaviour

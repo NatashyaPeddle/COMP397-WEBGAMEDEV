@@ -1,4 +1,8 @@
-//Natashya Peddle  301487275
+
+///Code / Internal Documentation - File Name: MudPuddle
+///Author's Name (s) & Student#: Natashya Peddle #301487275
+///Program Description / Purpose: When the player steps on the hazard, it causes the player to slide forward/in the direction you were moving, making the mud feel "slippery".
+
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;

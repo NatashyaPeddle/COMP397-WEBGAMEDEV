@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿///Code / Internal Documentation - File Name: PersistentSingleton
+///Author's Name (s) & Student#: Natashya Peddle #301487275
+///Program Description / Purpose: Singleton template
+
+using UnityEngine;
 
 public class PersistentSingleton<T> : MonoBehaviour where T : MonoBehaviour
 {

@@ -1,5 +1,9 @@
-//Natashya Peddle  301487275
-//Kristopher Prince 30146255
+
+///Code / Internal Documentation - File Name: FallingLedge
+///Author's Name (s) & Student#: Natashya Peddle #301487275 / Kristopher Prince #30146255
+///Program Description / Purpose: Manages the falling of the falling ledge & its trigger. After the platform falls, it destroys after a few seconds.
+
+
 using System.Collections;
 using UnityEngine;
 

@@ -1,4 +1,9 @@
-//Natashya Peddle  301487275
+
+
+///Code / Internal Documentation - File Name: Beartrap
+///Author's Name (s) & Student#: Natashya Peddle #301487275
+///Program Description / Purpose: Causes the beartrap damage when the player walks over the item.
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 

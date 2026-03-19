@@ -1,4 +1,6 @@
-//Natashya Peddle  301487275
+///Code / Internal Documentation - File Name: AudioController
+///Author's Name (s) & Student#: Natashya Peddle #301487275
+///Program Description / Purpose: Acts as audio controller and manages all audio sources and clips. 
 
 using System.Collections;
 using UnityEngine;

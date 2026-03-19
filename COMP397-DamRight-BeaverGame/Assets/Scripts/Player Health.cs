@@ -1,5 +1,8 @@
-//Kristopher Prince #30146255
-//Natashya Peddle  301487275
+
+///Code / Internal Documentation - File Name: PlayerHealth
+///Author's Name (s) & Student#: Kristopher Prince #30146255 / Natashya Peddle  301487275
+///Program Description / Purpose:
+///Loads the gameover screen if health reaches 0, manages health: amount, getting hurt and healing. 
 
 using UnityEngine;
 using UnityEngine.SceneManagement;

@@ -1,5 +1,7 @@
-//Natashya Peddle  301487275
-//Kristopher Prince #301462555
+
+///Code / Internal Documentation - File Name: PlayerShooter
+///Author's Name (s) & Student#: Natashya Peddle #301487275 / Kristopher Prince #301462555
+///Program Description / Purpose: Allows the player to shoot, lose ammo and reload ammo. Also destroys projectile after a second or so.
 
 using UnityEngine;
 using UnityEngine.InputSystem;

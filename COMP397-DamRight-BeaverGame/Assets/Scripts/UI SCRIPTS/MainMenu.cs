@@ -1,4 +1,7 @@
-//Natashya Peddle  301487275a
+
+///Code / Internal Documentation - File Name: MainMenu
+///Author's Name (s) & Student#: Natashya Peddle #301487275
+///Program Description / Purpose: Manages the main menu screen and button functionality. Allows the player to go to a different screen/level or exit.
 
 
 using UnityEngine;

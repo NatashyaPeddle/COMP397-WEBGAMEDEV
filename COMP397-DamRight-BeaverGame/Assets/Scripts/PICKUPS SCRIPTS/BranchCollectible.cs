@@ -1,4 +1,8 @@
-//Natashya Peddle  301487275
+///Code / Internal Documentation - File Name: BranchCollectible
+///Author's Name (s) & Student#: Natashya Peddle #301487275
+///Program Description / Purpose: Allows the player to pick up branches and adds to bonus branch score.
+
+
 using UnityEngine;
 
 

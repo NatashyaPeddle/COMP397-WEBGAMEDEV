@@ -1,3 +1,7 @@
+///Code / Internal Documentation - File Name: Game Over
+///Author's Name (s) & Student#: Unknown
+///Program Description / Purpose: Creates the gameover screen which appears upon player death. The buttons are functional. 
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

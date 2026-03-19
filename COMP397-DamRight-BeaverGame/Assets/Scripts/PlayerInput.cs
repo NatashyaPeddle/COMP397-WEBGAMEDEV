@@ -1,6 +1,10 @@
 //Kristopher Prince #301462555
 //Natashya Peddle  301487275
 
+///Code / Internal Documentation - File Name: PlayerInput
+///Author's Name (s) & Student#: Kristopher Prince #301462555 / Natashya Peddle #301487275
+///Program Description / Purpose: Manages player input and correlates to an action/movement. This also controls the player camera & mouse sensitivity. 
+
 using KBCore.Refs;
 using UnityEngine;
 using UnityEngine.InputSystem;
