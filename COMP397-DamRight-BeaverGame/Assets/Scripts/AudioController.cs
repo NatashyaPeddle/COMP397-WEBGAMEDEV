@@ -70,7 +70,7 @@ public class AudioController : MonoBehaviour
         }
         else
         {
-            sfxSource.volume = 1f;
+            sfxSource.volume = 0.2f;
         }
     }
 
