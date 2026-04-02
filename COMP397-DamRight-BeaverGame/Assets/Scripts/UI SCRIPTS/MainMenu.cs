@@ -22,15 +22,12 @@ public class MainMenu : MonoBehaviour
     {
         saveBtn.onClick.AddListener(() =>
         {
-            SaveLoadSystem.Instance.gameData.fileName = "Save1";
-            SaveLoadSystem.Instance.gameData.sceneName = "LevelOne";
-            SaveLoadSystem.Instance.SaveGame();
+            SaveLoadSystem.Instance.SaveGame("Save1");
         });
 
         loadBtn.onClick.AddListener(() =>
         {
             SaveLoadSystem.Instance.LoadGame("Save1");
-
         });
 
 
@@ -44,13 +41,6 @@ public class MainMenu : MonoBehaviour
         ///Add a Game Manager?
         ///Temporary Test menu
         SceneManager.LoadScene("LevelOne");
-    }
-
-    ///LOAD GAME ----------------
-    public void LoadGame()
-    {
-        ///Doesn't need to be operational for A#1 P2
-        SceneManager.LoadScene("LoadMenuSelection");
     }
 
     ///OPTIONS ----------------

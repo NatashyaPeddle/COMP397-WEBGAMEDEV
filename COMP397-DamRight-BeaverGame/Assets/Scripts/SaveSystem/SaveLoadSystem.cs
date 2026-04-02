@@ -3,6 +3,7 @@
 ///Program Description / Purpose: Save System
 
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SaveLoadSystem : PersistentSingleton<SaveLoadSystem>
@@ -21,22 +22,31 @@ public class SaveLoadSystem : PersistentSingleton<SaveLoadSystem>
         }
     }
 
-    public void SaveGame()
+    public void SaveGame(string saveName)
     {
+        gameData.fileName = saveName;
+        gameData.sceneName = SceneManager.GetActiveScene().name;
         dataService.Save(gameData);
     }
 
     public void LoadGame(string gameName)
     {
         gameData = dataService.Load(gameName);
+
+        if (gameData == null)
+        {
+            return;
+        }
+
+        Time.timeScale = 1;
+        
         if (string.IsNullOrWhiteSpace(gameData.sceneName))
         {
             gameData.sceneName = "Level 1";
         }
 
         SceneManager.LoadScene(gameData.sceneName);
-
-    }
+}
 
     public void DeleteGame(string gameName)
     {

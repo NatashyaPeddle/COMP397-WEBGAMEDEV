@@ -727,7 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 937030c998a846846a3bfa5b2df09602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuPanel: {fileID: 0}
+  menuPanel: {fileID: 53378356}
   isMenuOpen: 0
   InventoryPanel: {fileID: 0}
 --- !u!114 &53378361
@@ -744,6 +744,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saveBtn: {fileID: 1352407237}
   loadBtn: {fileID: 1810433667}
+  controlsPanel: {fileID: 0}
+  pcControls: {fileID: 0}
+  mobileControls: {fileID: 0}
 --- !u!4 &56185906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8865131379353200459, guid: fcfa878b615bf1843a0af0bdd2c517b5, type: 3}
