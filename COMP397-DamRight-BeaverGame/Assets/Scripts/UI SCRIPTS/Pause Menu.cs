@@ -42,10 +42,13 @@ public class PauseMenu : MonoBehaviour
                 }
             }
 
-            InputSystem.actions.FindActionMap("Player").Disable();
             Time.timeScale = 0f;
+
+#if !UNITY_ANDROID
+            InputSystem.actions.FindActionMap("Player").Disable();
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+#endif
         }
 
         else
@@ -58,10 +61,13 @@ public class PauseMenu : MonoBehaviour
                 }
             }
 
-            InputSystem.actions.FindActionMap("Player").Enable();
             Time.timeScale = 1f;
+
+#if !UNITY_ANDROID
+            InputSystem.actions.FindActionMap("Player").Enable();
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+#endif
         }
     }
 

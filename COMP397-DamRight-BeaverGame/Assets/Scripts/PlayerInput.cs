@@ -23,6 +23,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private float rotationSpeed = 10.0f;
     [SerializeField] private float mouseSensY = 8.0f;
     [SerializeField, Child] private Camera cam;
+    [SerializeField] private float mobileScale = 10.0f;
 
     //JUMP CONTROLS
     private float jumpHeight = 1.0f;
@@ -63,9 +64,10 @@ public class PlayerInput : MonoBehaviour
         jumping = new Vector3 (0.0f, 2.0f, 0.0f);
 
 
-        ///CURSOR
+#if !UNITY_ANDROID
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+#endif
     }
 
     private void OnDisable()
@@ -107,11 +109,14 @@ public class PlayerInput : MonoBehaviour
 
         controller.Move(movement * Time.deltaTime);
 
-        ///PLAYER ROTATION
-        transform.Rotate(Vector3.up, readLook.x * rotationSpeed * Time.deltaTime);
+#if UNITY_ANDROID
+        transform.Rotate(Vector3.up, readLook.x * rotationSpeed * mobileScale * Time.deltaTime);  
+        camXRotation += mouseSensY * readLook.y * Time.deltaTime * rotationSpeed * -1;
 
-        ///ROTATE CAMERA
+#else
+        transform.Rotate(Vector3.up, readLook.x * rotationSpeed * Time.deltaTime);  
         camXRotation += mouseSensY * readLook.y * Time.deltaTime * -1;
+#endif       
         camXRotation = Mathf.Clamp(camXRotation, -90f, 90f);
         cam.gameObject.transform.localRotation = Quaternion.Euler(camXRotation, 0, 0);
     }

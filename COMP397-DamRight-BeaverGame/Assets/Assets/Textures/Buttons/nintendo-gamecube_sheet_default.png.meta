@@ -1,0 +1,2466 @@
+fileFormatVersion: 2
+guid: 526a388a7a0f8e54ab7fd2128321e29c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 522
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cc336f39290e04d88dc0e5aefa7b92
+      internalID: -739098762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 500
+        width: 512
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831d2a259d02dfd4daf17bc284151d5c
+      internalID: 1912765928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 510
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847aa92fee5bda040a314627ec874c15
+      internalID: 1571224472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 478
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a92c2d1fab0da046a7960317b753305
+      internalID: 1749800141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 493
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f5af3705613964fa98616ccd53b8b3
+      internalID: 1303515677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 475
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6996784813a24e04c86fdfabe4b02370
+      internalID: -36715027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 478
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0461f49ce9a9f449830b6ed7d31b5f1
+      internalID: -879043359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 478
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47346c00699c2544aae03f7eeff1e3b7
+      internalID: -1389398498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_8
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 456
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428ff91decd0fff459cba7d3193fb272
+      internalID: -1426773750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_9
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 456
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0920baee95a9914f90eff629e488d5a
+      internalID: -403201112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_10
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 478
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cce44111c62fc4395ce08c1fac29fa
+      internalID: -1174492744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 456
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0260892512328174494e337d3514ecac
+      internalID: 865434646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_12
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 456
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e937d1c2436316e46bc3d90cc705d4a3
+      internalID: 984224880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_13
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 456
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1f8e36dcbbca048b0b773f2024e3c4
+      internalID: 193544862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_14
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 458
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8338355e7d26fcb489a7bb1583e45912
+      internalID: -1885196889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_15
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 456
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648ca6234d6312c428f212a6f66d7dc8
+      internalID: 73411775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 458
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4cb90cc43968c409daa2aaef706dad
+      internalID: -1093366356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_17
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 456
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f43c151829ea554c8a40dfb0cdf65bf
+      internalID: -1913342797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 390
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42675cbb823e96844bd617e421c6e60a
+      internalID: 1493418762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 392
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afe9dc5cc066054e9e7b5cd7956b629
+      internalID: -1889956536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_20
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 392
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52813ad71e235045a57382440b1213f
+      internalID: 1344157139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_21
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 429
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acd3dd93c27b3448a139c5cfb344012
+      internalID: -1852728700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_22
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 392
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48efdf1cb6827374cabab037510564c7
+      internalID: -2051271450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_23
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 392
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95acfff41add9534898222d934fcc361
+      internalID: -550151137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_24
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 392
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9860e9f48337548836b0e03ebfbfe9
+      internalID: -1004869183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_25
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 392
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44d6e6036500394d844a2806d210b95
+      internalID: 72729712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_26
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 392
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d8059cf44fdeb4dbd1e01d937b350c
+      internalID: 1981146389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_27
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 435
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71096e5cfac331d44abe3ee6afb5104d
+      internalID: -2011266390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_28
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 414
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229db8f2a4b0e5e4ba361fe181bf14aa
+      internalID: 824513095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 411
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b99718ae90b740468968e6d0d4d4e4e
+      internalID: 1523477563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_30
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 414
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcc9d819296a644bb4a3608a2e96977
+      internalID: 1073365203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_31
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 414
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e5957927289b348883a71d704eeadf
+      internalID: -467355410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_32
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 392
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1a62e18b9b04449809126eb991a581
+      internalID: -994032741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_33
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 328
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd82d74b8fe4d664aa8f87f82ba8e089
+      internalID: 1712769263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_34
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 372
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0aff11c3ec26e439a3a209c0590464
+      internalID: -674409485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_35
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 328
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb48bba4b60c504896299d1588e6045
+      internalID: 238499519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_36
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 347
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4c1e8eac6d3fa46b7549eb052d2236
+      internalID: -761456652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_37
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 328
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd71338ab68d220489514f755c5892f8
+      internalID: -276257457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_38
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 328
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9374097ee1d1e654b8fe35c72d660b55
+      internalID: -774231690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_39
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 328
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2267ecfb2e2fcdd479f85229fcf058f6
+      internalID: -1953168788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_40
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 328
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf27c86b9691e342bb062847ac3c630
+      internalID: 1520739433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_41
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 328
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6152e64254209ca4b9607a635e3d6dcb
+      internalID: 2008640337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_42
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 328
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d3977eb8e5fa1449958fd37c9b1921
+      internalID: 2076979864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_43
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 350
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94c9cc8579ca414eb5f2ab4bb1e2721
+      internalID: 1848200193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_44
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 350
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b42862d9e649f9409ad71cfc67dbbe4
+      internalID: 1854812487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_45
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 350
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c8d86f3c6ed7e40ab111754a188d50
+      internalID: 937704057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_46
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 328
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0df123caaf572f468a8a3e3659e3c20
+      internalID: -1750483871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_47
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 264
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651ae8784f8bc8c4f9fb6c928c4904a3
+      internalID: 398133329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_48
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 264
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717cc02f156d6464d87f1fec7417d061
+      internalID: 1993809140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_49
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 264
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7811ca060cdd4984e8717cd966a72415
+      internalID: 2071768699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 264
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf32f06ca30261408cfa4c4d10ae599
+      internalID: -305881246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_51
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 264
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422d5d81eb2ac224d9e88dc2954779b1
+      internalID: -877381590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_52
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 264
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf58085505308848baede845fc7e9eb
+      internalID: -1022499627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_53
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 264
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e2d75738add8a4aa42f2b80a165bb8
+      internalID: -1750260707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_54
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 264
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc422f1ae3607b54eb6a22ce8d25d59c
+      internalID: -1054326135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_55
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 264
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca5cc66231d13044816a6e52bfb105a
+      internalID: -758801211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_56
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 308
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6bd8ebeacb7dd4098a00b43f1f55f8
+      internalID: 436987826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_57
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 286
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7646334e066f9e4b867d80ec66cece0
+      internalID: -1172827886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_58
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 285
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3da8228ad2eee94d8094ef84b85f645
+      internalID: -879871229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_59
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 198
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deefc2d24ae46444facd9c8bbc8bc95d
+      internalID: -1057255707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_60
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 200
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f46fde8b3f3a84d97bbb740c53a2d3
+      internalID: -1684800757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_61
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 200
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad91ff70f15b249419e4bc0691d92807
+      internalID: -925728703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_62
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ae839d62c01034bbbfb887ed6bcdfc
+      internalID: -1993075742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_63
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 200
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c5e5399a0e45e4792fef3ef595f2af
+      internalID: -2085126207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_64
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 200
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89a0d6b1c27de5418a8439f6de57bd3
+      internalID: -1363992562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_65
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 198
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008a806daf1f6f44181d3a1bdd599c3d
+      internalID: -1619533366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_66
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 198
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d28b453d4c65ff48bdabe53a4fe2898
+      internalID: 1438992968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_67
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 198
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c7628f89d78a74583836b81cb5423e
+      internalID: -662603700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_68
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 144
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb47c74a17b3e3b4684e890fe4006e6d
+      internalID: 465701277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_69
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 144
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836e1a23e16c48243b090ec23e8a5f62
+      internalID: -339396870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_70
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 141
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1281f5f7902be4f8593c7f7912d9b8
+      internalID: -2045107039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_71
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 138
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ba7f21977e4594eb7aa4c59ba4f112
+      internalID: -2017352922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_72
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 136
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3c17434dcc06b418af785a8a6f0682
+      internalID: 884408469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_73
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 136
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3b2a83fbfa98d48a39bee34e04aae3
+      internalID: -833551197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_74
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 136
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ef787a49f529143b647f34aa95ca16
+      internalID: -794958077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_75
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 136
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bbe1b816d943d4cb636fe409bb0140
+      internalID: -1206738424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_76
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 136
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a375bff1e70aa1a4092eb5cf8916cba3
+      internalID: 764673412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_77
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 104
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc2b813c9c964740adec7397620bccf
+      internalID: 2053754408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_78
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 104
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f5b6f5f8db1d9439a0d021a2e118c7
+      internalID: 1742995393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_79
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 104
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b66aecb7497d5144a4129248d859403
+      internalID: 459489019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_80
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 104
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf861b55939fcd4ca807f501ac16b4d
+      internalID: 223861692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_81
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 104
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a3bd31846150e43a8d5e37a5c82804
+      internalID: -63950352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_82
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd59cc13aa9f1f3488a825091f9f5762
+      internalID: -149005950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_83
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 80
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f770014348e8f4f9eaa3355f1c4755
+      internalID: -851798046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_84
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 71
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dad6416d196424fa5e20ba161d8953
+      internalID: 1220580133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_85
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 71
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0321c033304e02e4cb07408e20cffe5e
+      internalID: -349304211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_86
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 78
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9793ef2d585ccf443941168973997d34
+      internalID: 1733051424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_87
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 80
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7275f1a29c2ac5b429adcdd514328916
+      internalID: -2097967623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_88
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 77
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ed8026640197c44a2721814595ea91
+      internalID: 1001742411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_89
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 77
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ab74c573216494787144b0063f9bf0
+      internalID: 1725476938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_90
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 77
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414c00fbace056a4e95248c2286aebb2
+      internalID: 341034570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_91
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c3b45fec362c144b24613abea945ad
+      internalID: -1520607638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_92
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 8
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18989fcdaf83bfc40b566a811e3e6f90
+      internalID: -665034466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_93
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 6
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53db5d303a5132e45b6f22b29e8a9af3
+      internalID: -1537517766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_94
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 6
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afe41fff1523d24d96b6c10f852ddcf
+      internalID: -1394418310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_95
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 8
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88696656971a8194898ea9c9bf39afca
+      internalID: -1495044102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_96
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 6
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261d11da8ad36324fb26b54b17a98a6a
+      internalID: -577429664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_97
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 8
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7f1180180d0c648bf698375655a570
+      internalID: 1937487124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_98
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 8
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01a3a78777e8ed47a644b3b14dbe8c1
+      internalID: -1697395351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_99
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 13
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb04a23ca4a57944d88841ae68773e8f
+      internalID: 227692686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nintendo-gamecube_sheet_default_100
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 40
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d10bc5f9842704db47cbdf5dd836bf
+      internalID: 1548836152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 419dd7dab27ac044c994140ea1e55bbb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      nintendo-gamecube_sheet_default_0: -739098762
+      nintendo-gamecube_sheet_default_1: 1912765928
+      nintendo-gamecube_sheet_default_10: -1174492744
+      nintendo-gamecube_sheet_default_100: 1548836152
+      nintendo-gamecube_sheet_default_11: 865434646
+      nintendo-gamecube_sheet_default_12: 984224880
+      nintendo-gamecube_sheet_default_13: 193544862
+      nintendo-gamecube_sheet_default_14: -1885196889
+      nintendo-gamecube_sheet_default_15: 73411775
+      nintendo-gamecube_sheet_default_16: -1093366356
+      nintendo-gamecube_sheet_default_17: -1913342797
+      nintendo-gamecube_sheet_default_18: 1493418762
+      nintendo-gamecube_sheet_default_19: -1889956536
+      nintendo-gamecube_sheet_default_2: 1571224472
+      nintendo-gamecube_sheet_default_20: 1344157139
+      nintendo-gamecube_sheet_default_21: -1852728700
+      nintendo-gamecube_sheet_default_22: -2051271450
+      nintendo-gamecube_sheet_default_23: -550151137
+      nintendo-gamecube_sheet_default_24: -1004869183
+      nintendo-gamecube_sheet_default_25: 72729712
+      nintendo-gamecube_sheet_default_26: 1981146389
+      nintendo-gamecube_sheet_default_27: -2011266390
+      nintendo-gamecube_sheet_default_28: 824513095
+      nintendo-gamecube_sheet_default_29: 1523477563
+      nintendo-gamecube_sheet_default_3: 1749800141
+      nintendo-gamecube_sheet_default_30: 1073365203
+      nintendo-gamecube_sheet_default_31: -467355410
+      nintendo-gamecube_sheet_default_32: -994032741
+      nintendo-gamecube_sheet_default_33: 1712769263
+      nintendo-gamecube_sheet_default_34: -674409485
+      nintendo-gamecube_sheet_default_35: 238499519
+      nintendo-gamecube_sheet_default_36: -761456652
+      nintendo-gamecube_sheet_default_37: -276257457
+      nintendo-gamecube_sheet_default_38: -774231690
+      nintendo-gamecube_sheet_default_39: -1953168788
+      nintendo-gamecube_sheet_default_4: 1303515677
+      nintendo-gamecube_sheet_default_40: 1520739433
+      nintendo-gamecube_sheet_default_41: 2008640337
+      nintendo-gamecube_sheet_default_42: 2076979864
+      nintendo-gamecube_sheet_default_43: 1848200193
+      nintendo-gamecube_sheet_default_44: 1854812487
+      nintendo-gamecube_sheet_default_45: 937704057
+      nintendo-gamecube_sheet_default_46: -1750483871
+      nintendo-gamecube_sheet_default_47: 398133329
+      nintendo-gamecube_sheet_default_48: 1993809140
+      nintendo-gamecube_sheet_default_49: 2071768699
+      nintendo-gamecube_sheet_default_5: -36715027
+      nintendo-gamecube_sheet_default_50: -305881246
+      nintendo-gamecube_sheet_default_51: -877381590
+      nintendo-gamecube_sheet_default_52: -1022499627
+      nintendo-gamecube_sheet_default_53: -1750260707
+      nintendo-gamecube_sheet_default_54: -1054326135
+      nintendo-gamecube_sheet_default_55: -758801211
+      nintendo-gamecube_sheet_default_56: 436987826
+      nintendo-gamecube_sheet_default_57: -1172827886
+      nintendo-gamecube_sheet_default_58: -879871229
+      nintendo-gamecube_sheet_default_59: -1057255707
+      nintendo-gamecube_sheet_default_6: -879043359
+      nintendo-gamecube_sheet_default_60: -1684800757
+      nintendo-gamecube_sheet_default_61: -925728703
+      nintendo-gamecube_sheet_default_62: -1993075742
+      nintendo-gamecube_sheet_default_63: -2085126207
+      nintendo-gamecube_sheet_default_64: -1363992562
+      nintendo-gamecube_sheet_default_65: -1619533366
+      nintendo-gamecube_sheet_default_66: 1438992968
+      nintendo-gamecube_sheet_default_67: -662603700
+      nintendo-gamecube_sheet_default_68: 465701277
+      nintendo-gamecube_sheet_default_69: -339396870
+      nintendo-gamecube_sheet_default_7: -1389398498
+      nintendo-gamecube_sheet_default_70: -2045107039
+      nintendo-gamecube_sheet_default_71: -2017352922
+      nintendo-gamecube_sheet_default_72: 884408469
+      nintendo-gamecube_sheet_default_73: -833551197
+      nintendo-gamecube_sheet_default_74: -794958077
+      nintendo-gamecube_sheet_default_75: -1206738424
+      nintendo-gamecube_sheet_default_76: 764673412
+      nintendo-gamecube_sheet_default_77: 2053754408
+      nintendo-gamecube_sheet_default_78: 1742995393
+      nintendo-gamecube_sheet_default_79: 459489019
+      nintendo-gamecube_sheet_default_8: -1426773750
+      nintendo-gamecube_sheet_default_80: 223861692
+      nintendo-gamecube_sheet_default_81: -63950352
+      nintendo-gamecube_sheet_default_82: -149005950
+      nintendo-gamecube_sheet_default_83: -851798046
+      nintendo-gamecube_sheet_default_84: 1220580133
+      nintendo-gamecube_sheet_default_85: -349304211
+      nintendo-gamecube_sheet_default_86: 1733051424
+      nintendo-gamecube_sheet_default_87: -2097967623
+      nintendo-gamecube_sheet_default_88: 1001742411
+      nintendo-gamecube_sheet_default_89: 1725476938
+      nintendo-gamecube_sheet_default_9: -403201112
+      nintendo-gamecube_sheet_default_90: 341034570
+      nintendo-gamecube_sheet_default_91: -1520607638
+      nintendo-gamecube_sheet_default_92: -665034466
+      nintendo-gamecube_sheet_default_93: -1537517766
+      nintendo-gamecube_sheet_default_94: -1394418310
+      nintendo-gamecube_sheet_default_95: -1495044102
+      nintendo-gamecube_sheet_default_96: -577429664
+      nintendo-gamecube_sheet_default_97: 1937487124
+      nintendo-gamecube_sheet_default_98: -1697395351
+      nintendo-gamecube_sheet_default_99: 227692686
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

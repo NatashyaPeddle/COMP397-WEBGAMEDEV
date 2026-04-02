@@ -14,6 +14,10 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button saveBtn;
     [SerializeField] private Button loadBtn;
 
+    [SerializeField] private GameObject controlsPanel;
+    [SerializeField] private GameObject pcControls;
+    [SerializeField] private GameObject mobileControls;
+
     private void Start()
     {
         saveBtn.onClick.AddListener(() =>
@@ -58,11 +62,31 @@ public class MainMenu : MonoBehaviour
     ///EXIT ----------------
     public void QuitGame()
     {
-        #if !UNITY_EDITOR
+#if !UNITY_EDITOR
         Application.Quit();
-        #elif UNITY_EDITOR
+#elif UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-        #   endif
+#endif
+    }
+
+    public void Controls()
+    {
+        controlsPanel.SetActive(true);
+
+#if UNITY_ANDROID
+        mobileControls.SetActive(true);
+        pcControls.SetActive(false);
+#else   
+        pcControls.SetActive(true);
+        mobileControls.SetActive(false);
+#endif
+    }
+
+    public void ReturnControls()
+    {
+        controlsPanel.SetActive(false);
+        mobileControls.SetActive(false);
+        pcControls.SetActive(false);
     }
 
     ///BACK TO MAIN MENU -----------

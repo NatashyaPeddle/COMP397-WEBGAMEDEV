@@ -54,17 +54,22 @@ public class InventoryMenu : MonoBehaviour
                 }
             }
 
-            InputSystem.actions.FindActionMap("Player").Disable(); //disable the action map for player
+            
             Time.timeScale = 0f;
+#if !UNITY_ANDROID
+            InputSystem.actions.FindActionMap("Player").Disable(); //disable the action map for player
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+#endif
         }
         else
         {
-            InputSystem.actions.FindActionMap("Player").Enable();
             Time.timeScale = 1f;
+#if !UNITY_ANDROID
+            InputSystem.actions.FindActionMap("Player").Enable();
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+#endif
 
             foreach (GameObject UIOnScreen in inGameUI)
             {

@@ -34,8 +34,10 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             audioController.PlayDeathSFX();
+#if !UNITY_ANDROID
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+#endif
             SceneManager.LoadScene("GameOverScreen");
         }
     }
@@ -52,8 +54,10 @@ public class PlayerHealth : MonoBehaviour
         if(health <= 0)
         {
             audioController.PlayDeathSFX();
+#if !UNITY_ANDROID
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+#endif
             SceneManager.LoadScene("GameOverScreen");
         }
     }
