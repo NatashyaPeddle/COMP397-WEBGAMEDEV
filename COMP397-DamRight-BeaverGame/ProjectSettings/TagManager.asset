@@ -10,6 +10,7 @@ TagManager:
   - InGameUI
   - ScoreUI
   - waypoint
+  - Berry
   layers:
   - Default
   - TransparentFX

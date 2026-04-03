@@ -7,6 +7,12 @@ public abstract class Item
 {
     protected GameObject prefab;
 
-    public abstract void SetItemPrefab(GameObject prefab);
-    public abstract GameObject GetItemPrefab();
+    public void SetItemPrefab(GameObject prefab)
+    {
+        this.prefab = prefab;
+    }
+    public GameObject GetItemPrefab()
+    {
+        return prefab;
+    }
 }

@@ -1,61 +1,99 @@
 ///Code / Internal Documentation - File Name: SaveLoadSystem
-///Author's Name (s) & Student#: Natashya Peddle #301487275
+///Author's Name (s) & Student#: Natashya Peddle #301487275 & Kristopher Prince #301462555
 ///Program Description / Purpose: Save System
 
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
-public class SaveLoadSystem : PersistentSingleton<SaveLoadSystem>
+public class SaveLoadSystem : MonoBehaviour
 {
+    public static SaveLoadSystem Instance;
+    private IDataService dataService;
     public GameData gameData;
-    IDataService dataService;
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-        dataService = new FileDataService(new JsonSerializer());
-
-        if (gameData == null)
+        if (Instance == null)
         {
-            gameData = new GameData();
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        dataService = new FileDataService(new JsonSerializer());
+        if (gameData == null)
+            gameData = new GameData();
     }
 
     public void SaveGame(string saveName)
     {
         gameData.fileName = saveName;
+
+        var player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            gameData.playerPosition = new SerializableVector3(player.transform.position);
+
+            var health = player.GetComponent<PlayerHealth>();
+            if (health != null)
+                gameData.playerHealth = health.health;
+
+            var shooter = player.GetComponent<PlayerShooter>();
+            if (shooter != null)
+                gameData.playerAmmo = shooter.ammo;
+        }
+
+        if (BonusScore.Instance != null)
+            gameData.branchesCollected = BonusScore.Instance.score;
+
         gameData.sceneName = SceneManager.GetActiveScene().name;
         dataService.Save(gameData);
     }
 
-    public void LoadGame(string gameName)
+    public void LoadGame(string saveName)
     {
-        gameData = dataService.Load(gameName);
-
+        gameData = dataService.Load(saveName);
         if (gameData == null)
-        {
             return;
-        }
 
-        Time.timeScale = 1;
-        
-        if (string.IsNullOrWhiteSpace(gameData.sceneName))
+        StartCoroutine(LoadAndApplySave());
+    }
+
+    private IEnumerator LoadAndApplySave()
+    {
+        AsyncOperation op = SceneManager.LoadSceneAsync(gameData.sceneName);
+        while (!op.isDone)
+            yield return null;
+
+        yield return null; // wait one more frame to ensure player prefab is instantiated
+
+        var player = GameObject.FindGameObjectWithTag("Player");
+        while (player == null) // wait until player exists
         {
-            gameData.sceneName = "Level 1";
+            yield return null;
+            player = GameObject.FindGameObjectWithTag("Player");
         }
 
-        SceneManager.LoadScene(gameData.sceneName);
-}
+        player.transform.position = gameData.playerPosition.ToVector3();
 
-    public void DeleteGame(string gameName)
-    {
-        dataService.Delete(gameName);
+        var health = player.GetComponent<PlayerHealth>();
+        if (health != null)
+            health.health = gameData.playerHealth;
+
+        var shooter = player.GetComponent<PlayerShooter>();
+        if (shooter != null)
+            shooter.ammo = gameData.playerAmmo;
+
+        if (BonusScore.Instance != null)
+        {
+            BonusScore.Instance.score = gameData.branchesCollected;
+            BonusScore.Instance.updateScoreUI();
+        }
+
+        Time.timeScale = 1f;
     }
-
-    public IEnumerable<string> ListAllSaves()
-    {
-        return dataService.ListSaves();
-    }
-
 }

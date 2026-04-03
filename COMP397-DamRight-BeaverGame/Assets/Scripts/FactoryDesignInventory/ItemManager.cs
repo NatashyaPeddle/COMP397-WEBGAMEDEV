@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class ItemManager: MonoBehaviour
 {
-    [SerializeField] public GameObject A_BERRY;
     [SerializeField] public ItemsFactory itemsFactory;
     [SerializeField] public Transform[] spawnPoints;
 
@@ -30,7 +29,10 @@ public class ItemManager: MonoBehaviour
 
     private void Start()
     {
-        SpawnItem("Berry", 0);
+        for (int i = 0; i < spawnPoints.Length; i++)
+        {
+            SpawnItem("Berry", i);
+        }
     }
 
 

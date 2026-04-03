@@ -29,6 +29,7 @@ public class FileDataService : IDataService
     // Save method to serialize the data and write it to a file
     public void Save(GameData data, bool overwrite = true)
     {
+
         if (data == null)
         {
             Debug.LogError("Cannot save: GameData is null.");
@@ -36,6 +37,7 @@ public class FileDataService : IDataService
         }
 
         string fileLocation = GetPathFile(data.fileName);
+        Debug.Log("Saving File To: " + fileLocation);
 
         // Check if the file exists and whether overwriting is allowed
         if (!overwrite && File.Exists(fileLocation))
@@ -53,21 +55,25 @@ public class FileDataService : IDataService
         {
             Debug.LogError($"Error saving file: {ex.Message}");
         }
+        
     }
 
     // Load method to read the file and deserialize it into GameData
     public GameData Load(string fileName)
     {
         string fileLocation = GetPathFile(fileName);
+        Debug.Log("Loading File From: " + fileLocation);
 
         if (!File.Exists(fileLocation))
         {
-            throw new System.Exception($"No persistent data found at: {fileLocation}");
+            Debug.LogError($"No save file found at: {fileLocation}");
+            return null;
         }
 
         try
         {
             string json = File.ReadAllText(fileLocation);
+            Debug.Log("Loaded JSON: " + json);
             return serializer.Deserialize<GameData>(json);
         }
         catch (System.Exception ex)

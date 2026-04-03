@@ -6,6 +6,7 @@ using UnityEngine;
 public class ItemsFactory : MonoBehaviour
 {
     public GameObject A_BERRY;
+    public GameObject SUPER_BERRY;
 
     public Item CreateItem(string itemType)
     {
@@ -26,7 +27,7 @@ public class ItemsFactory : MonoBehaviour
         }
         else
         {
-            Debug.Log("Uknown Item");
+            Debug.Log("Unknown Item");
             return null;
         }
        

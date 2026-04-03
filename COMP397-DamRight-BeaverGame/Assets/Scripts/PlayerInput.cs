@@ -39,6 +39,7 @@ public class PlayerInput : MonoBehaviour
     private float camXRotation;
     private Vector3 velocity;
 
+
     private void OnValidate()
     {
         this.ValidateRefs();
