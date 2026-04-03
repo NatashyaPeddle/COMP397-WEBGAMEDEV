@@ -39,7 +39,7 @@ public class MainMenu : MonoBehaviour
     public void StartNewGame()
     {
         ///Add a Game Manager?
-        ///Temporary Test menu
+        Time.timeScale = 1f;
         SceneManager.LoadScene("LevelOne");
     }
 
