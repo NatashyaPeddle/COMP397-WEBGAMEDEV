@@ -32,6 +32,7 @@ public class BranchCollectible : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Branch Picked up");
+            EventChannelManager.Instance.stickEvent.RaiseEvent();
 
             if(BonusScore.Instance != null)
             {

@@ -86,6 +86,7 @@ public class NPC : MonoBehaviour
         {
             audioController.PlayEnemyDefeatedSFX();
             Destroy(gameObject);
+            EventChannelManager.Instance.killEvent.RaiseEvent();
         }
 
         else

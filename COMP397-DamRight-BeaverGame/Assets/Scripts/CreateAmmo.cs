@@ -33,6 +33,7 @@ public class CreateAmmo : MonoBehaviour
         if (InRange && interact.WasPressedThisFrame())
         {
             createAmmo();
+            EventChannelManager.Instance.reloadEvent.RaiseEvent();
         }
 
         

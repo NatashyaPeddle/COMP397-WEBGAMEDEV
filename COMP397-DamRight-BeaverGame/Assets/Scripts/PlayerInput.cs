@@ -85,6 +85,7 @@ public class PlayerInput : MonoBehaviour
         {
             audioController.PlayJumpSFX();
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            EventChannelManager.Instance.jumpEvent.RaiseEvent();
         }
     }
 
