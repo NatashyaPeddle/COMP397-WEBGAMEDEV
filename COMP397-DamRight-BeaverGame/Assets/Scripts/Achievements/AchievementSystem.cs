@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class AchievementSystem : MonoBehaviour
@@ -91,7 +90,7 @@ public class AchievementSystem : MonoBehaviour
 
         if (!reloadUnlocked && currentReloads >= achievementReloads)
         {
-            Debug.Log("Achievement Unlocked: Locked & Loaded");
+            Debug.Log("Achievement Unlocked: Tree Hugger");
 
             reloadUnlocked = true;
             UnlockAchievement("Tree Hugger", "Reloaded!");
@@ -109,18 +108,4 @@ public class AchievementSystem : MonoBehaviour
             achievementUI.ShowAchievement(title, description);
         }
     }
-
-
-//     if (shooter != null && ammoText != null)
-//        {
-//            ammoText.text = "Ammo: " + shooter.ammo + " / " + shooter.maxAmmo;
-//        }
-
-//if (InventoryPanel != null && InventoryPanel.activeSelf)
-//{
-//    if (shooter != null && InventoryAmmo != null)
-//    {
-//        InventoryAmmo.text = " " + shooter.ammo;
-//    }
-//}
 }

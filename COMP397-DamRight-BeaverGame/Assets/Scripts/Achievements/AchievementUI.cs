@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
 public class AchievementUI : MonoBehaviour
@@ -19,41 +18,9 @@ public class AchievementUI : MonoBehaviour
     private IEnumerator ShowRoutine(string title, string description)
     {
         AchievementUIPanel.SetActive(true);
-        AchievementText.text = "<b>" + title + "</b>/n" + description;
+        AchievementText.text = "<b>" + title + "</b>\n" + description;
         yield return new WaitForSeconds(duration);
         AchievementUIPanel.SetActive(false);
     }
 
 }
-
-//using TMPro;
-//using UnityEngine;
-//using UnityEngine.UI;
-
-
-//public class AmmoDisplay : MonoBehaviour
-//{
-//    [SerializeField] private PlayerShooter shooter;
-//    [SerializeField] private TextMeshProUGUI ammoText;
-//    [SerializeField] private TextMeshProUGUI InventoryAmmo;
-//    [SerializeField] private GameObject InventoryPanel;
-
-
-//    void Update()
-//    {
-//        if (shooter != null && ammoText != null)
-//        {
-//            ammoText.text = "Ammo: " + shooter.ammo + " / " + shooter.maxAmmo;
-//        }
-
-//        if (InventoryPanel != null && InventoryPanel.activeSelf)
-//        {
-//            if (shooter != null && InventoryAmmo != null)
-//            {
-//                InventoryAmmo.text = " " + shooter.ammo;
-//            }
-//        }
-
-
-//    }
-//}

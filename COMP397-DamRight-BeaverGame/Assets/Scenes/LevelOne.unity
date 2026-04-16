@@ -1450,11 +1450,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1613802795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 236}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 30, y: -30}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &131741497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1484,8 +1484,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1508,7 +1508,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -7060,7 +7060,7 @@ MonoBehaviour:
   killEvent: {fileID: 11400000, guid: e39d2b13b3e4352429b245d17b99fd0d, type: 2}
   stickEvent: {fileID: 11400000, guid: 61a73846a93559e4881df72c621d25a1, type: 2}
   reloadEvent: {fileID: 11400000, guid: c962fc290eea5f6428246358bfd2dc46, type: 2}
-  achievementUI: {fileID: 0}
+  achievementUI: {fileID: 1427375333}
 --- !u!4 &837808715
 Transform:
   m_ObjectHideFlags: 0
@@ -13489,6 +13489,7 @@ GameObject:
   - component: {fileID: 1427375329}
   - component: {fileID: 1427375328}
   - component: {fileID: 1427375332}
+  - component: {fileID: 1427375333}
   m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
@@ -13597,6 +13598,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobileUIPanel: {fileID: 1864921949}
+--- !u!114 &1427375333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427375327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e90a373422ed04faa2ee876cd1c0d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AchievementUIPanel: {fileID: 1613802794}
+  AchievementText: {fileID: 131741497}
+  duration: 2.5
 --- !u!4 &1427825552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8865131379353200459, guid: fcfa878b615bf1843a0af0bdd2c517b5, type: 3}
@@ -15574,14 +15590,13 @@ GameObject:
   - component: {fileID: 1613802795}
   - component: {fileID: 1613802797}
   - component: {fileID: 1613802796}
-  - component: {fileID: 1613802798}
   m_Layer: 5
-  m_Name: AhievementUIPanel
+  m_Name: AchievementUIPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1613802795
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15641,21 +15656,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613802794}
   m_CullTransparentMesh: 1
---- !u!114 &1613802798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613802794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22e90a373422ed04faa2ee876cd1c0d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AchievementUIPanel: {fileID: 1613802794}
-  AchievementText: {fileID: 131741497}
-  duration: 2.5
 --- !u!1 &1616426997
 GameObject:
   m_ObjectHideFlags: 0
