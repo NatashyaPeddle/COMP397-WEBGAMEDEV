@@ -6,7 +6,6 @@ using UnityEngine;
 using KBCore.Refs;
 using UnityEngine.AI;
 using System.Collections.Generic;
-using System.Linq;
 
 
 [RequireComponent(typeof(NavMeshAgent))]
@@ -76,6 +75,7 @@ public class NPC : MonoBehaviour
     {
         player = null;
         isChasing = false;
+        agent.speed = normalSpeed;
         agent.ResetPath();
     }
 

@@ -1,4 +1,3 @@
-
 ///Code / Internal Documentation - File Name: NPC Body
 ///Author's Name (s) & Student#: Kristopher Prince #301462555
 ///Program Description / Purpose: NPC Body Damage

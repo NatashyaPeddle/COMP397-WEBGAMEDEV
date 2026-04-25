@@ -256,7 +256,6 @@ GameObject:
   - component: {fileID: 8856903344757986969}
   - component: {fileID: 285594604892571765}
   - component: {fileID: -512917630042972505}
-  - component: {fileID: 565279116391530203}
   m_Layer: 9
   m_Name: Enemy_AngryLumberjack
   m_TagString: NPC
@@ -321,6 +320,11 @@ MonoBehaviour:
   bodyCollider: {fileID: 10415752350620777}
   losCollider: {fileID: 4685885965818977576}
   waypoints: []
+  audioController: {fileID: 0}
+  animator: {fileID: 5866666021909216657, guid: 868a622eb3cd25c4f82c92bca054f33f, type: 3}
+  controller: {fileID: 9100000, guid: c9b8c563102143141935ccc177515353, type: 2}
+  normalSpeed: 7
+  chaseSpeed: 10
 --- !u!54 &-512917630042972505
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -348,28 +352,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &565279116391530203
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6616589142422073852}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c9b8c563102143141935ccc177515353, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &4029335927242055489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381,6 +363,30 @@ PrefabInstance:
     - target: {fileID: 558414419206108352, guid: 88f8f686754c5e14fa0b2ca542788493, type: 3}
       propertyPath: m_Name
       value: char_039_vinking_man_FBX_RIG
+      objectReference: {fileID: 0}
+    - target: {fileID: 558414419206108352, guid: 88f8f686754c5e14fa0b2ca542788493, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 828252372890469784, guid: 88f8f686754c5e14fa0b2ca542788493, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 828252372890469784, guid: 88f8f686754c5e14fa0b2ca542788493, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'puxxerig:RightForeArm'\n\tTransform 'puxxerig:RightHandThumb3'\n\tTransform
+        'puxxerig:LeftHandRing2'\n\tTransform 'puxxerig:Hips'\n\tTransform 'puxxerig:Neck'\n\tTransform
+        'puxxerig:RightHandIndex2'\n\tTransform 'puxxerig:RightUpLeg'\n\tTransform
+        'puxxerig:LeftShoulder'\n\tTransform 'puxxerig:RightHandIndex3'\n\tTransform
+        'puxxerig:RightShoulder'\n\tand more ...\n\tFrom animation clip 'char_000_a011_idle_stand'\n\tFrom
+        animation clip 'char_000_a021_walk_forward'\n\tFrom animation clip 'char_000_a031_run_forward'\n\tFrom
+        animation clip 'char_000_a101_attack_hand_object_stand'"
+      objectReference: {fileID: 0}
+    - target: {fileID: 828252372890469784, guid: 88f8f686754c5e14fa0b2ca542788493, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 933426377326866042, guid: 88f8f686754c5e14fa0b2ca542788493, type: 3}
       propertyPath: m_LocalScale.x
